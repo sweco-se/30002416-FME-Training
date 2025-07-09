@@ -12,9 +12,5 @@ This FME Form Basic course is for users with little to no experience of FME Form
 
 Every effort has been made to ensure the accuracy of this document. Sweco apologizes for any errors or omissions that remain and would appreciate being informed of any errors found. Sweco will correct any such errors and omissions in a subsequent version, as feasible. Please contact us at:
 
-Jurgen van Tiggelen
-
-Phone: +46 7 09 39 26 98
-
-Email: [Jurgen.van.tiggelen@sweco.se](mailto:Jurgen.van.tiggelen@sweco.se)
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
