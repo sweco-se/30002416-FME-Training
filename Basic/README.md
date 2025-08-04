@@ -10,7 +10,5 @@ This FME Form Basic course is for users with little to no experience of FME Form
 
 ### Revisions:
 
-Every effort has been made to ensure the accuracy of this document. Sweco apologizes for any errors or omissions that remain and would appreciate being informed of any errors found. Sweco will correct any such errors and omissions in a subsequent version, as feasible. Please contact us at:
-
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+Every effort has been made to ensure the accuracy of this document. Sweco apologizes for any errors or omissions that remain and would appreciate being informed of any errors found. Sweco will correct any such errors and omissions in a subsequent version, as feasible. Please contact your trainer.
 
