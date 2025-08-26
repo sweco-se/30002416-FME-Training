@@ -6,7 +6,7 @@ This is the exercise manual for the FME Form basic training course for Safe Soft
 
 ### About this document
 
-This FME Form Basic course is for users with little to no experience of FME Form. In the exercises you will find words written in _Cursive._ These will help you out solving the questions. Orange blocks will always indicate a bonus task you can perform on the exercise if you have time left or want to test your skills. Blue blocks will always give you some extra information.
+This FME Form Basic course is for users with little to no experience of FME Form. In the exercises you will find words written in _Cursive._ These will help you out solving the questions. You can also look in the "tips" block. Bonus blocks will give you an extra task you can perform on the exercise if you have time left or want to test your skills. Blocks indicated with an "i" always give you some extra information.
 
 ### Revisions:
 
