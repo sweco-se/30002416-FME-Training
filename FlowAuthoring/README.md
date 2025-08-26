@@ -6,7 +6,7 @@ This is the exercise manual for the FME Flow Authoring training course for Safe 
 
 #### About this document <a href="#about-this-document" id="about-this-document"></a>
 
-The exercises in this manual are meant for advanced user of FME Form and new users of FME Flow. We assume you are familiar with the contents of the FME Form Basic course and preferable the content of the Advanced course. In the exercises you will find words written in _Cursive._ These will help you out solving the questions. Orange blocks will always indicate a bonus task you can perform on the exercise if you have time left or want to test your skills. Green blocks will sum up what you should have learnt from the exercise.
+The exercises in this manual are meant for advanced user of FME Form and new users of FME Flow. We assume you are familiar with the contents of the FME Form Basic course and preferable the content of the Advanced course. In the exercises you will find words written in _Cursive._ These will help you out solving the questions. You can also look in the "tips" block. Bonus blocks will give you an extra task you can perform on the exercise if you have time left or want to test your skills. Blocks indicated with an "i" always give you some extra information.
 
 #### Revisions: <a href="#revisions" id="revisions"></a>
 
