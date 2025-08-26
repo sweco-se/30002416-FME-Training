@@ -6,7 +6,7 @@ This is the exercise manual for the FME Form advanced training course for Safe S
 
 #### About this document <a href="#about-this-document" id="about-this-document"></a>
 
-This FME Form Advanced course is for users with some experience of FME Form. We assume you are familiar with the contents of the FME Form Basic course. In the exercises you will find words written in _Cursive._ These will help you out solving the questions. Orange blocks will always indicate a bonus task you can perform on the exercise if you have time left or want to test your skills. Green blocks will sum up what you should have learnt from the exercise.
+This FME Form Advanced course is for users with some experience of FME Form. We assume you are familiar with the contents of the FME Form Basic course. In the exercises you will find words written in _Cursive._ These will help you out solving the questions. You can also look in the "tips" block. Bonus blocks will give you an extra task you can perform on the exercise if you have time left or want to test your skills. Blocks indicated with an "i" always give you some extra information.
 
 #### Revisions: <a href="#revisions" id="revisions"></a>
 
