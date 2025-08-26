@@ -6,7 +6,7 @@ This is the exercise manual for the FME Form basic för Data- och informationssa
 
 ### About this document
 
-This FME Form basic för Data- och informationssamordnarecourse is for users with little to no experience of FME Form. Bonus blocks will always indicate a bonus task you can perform on the exercise if you have time left or want to test your skills. Blue blocks will always give you some extra information.
+This FME Form basic för Data- och informationssamordnarecourse is for users with little to no experience of FME Form.  You can look in the "tips" block for some extra help. Bonus blocks will give you an extra task you can perform on the exercise if you have time left or want to test your skills. Blocks indicated with an "i" always give you some extra information.
 
 ### Revisions:
 
