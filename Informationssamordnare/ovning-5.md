@@ -10,31 +10,27 @@ Projektledaren vill ha en Excell med en flik för de filer som inte finns i leve
 Mall att använda finns i C:\FMEData2025\Data\Informationssamordnare\15\_Kontroll (1568-C1-21-06033\_mall.xlsx).&#x20;
 
 Hur det fungerar:\
-FME behöver veta vilka celler som den ska skriva till i din mall. I Excell behöver du därför definiera området i Namnhanteraren under Formler, en så kallad Name range. Döp denna till något lämpligt då den används i skriptet.
+FME behöver veta vilka celler som den ska skriva till i din mall. I Excell behöver du därför definiera området i Namnhanteraren under Formler, en så kallad _Name range_. Excell-mallen vi använder har detta redan konfigurerat. Vi behöver dock konfigurera det i skriptet.
+
+I din flikhantering, lägg till ett attribut som heter _namerange_ och för varje flik ge värdet _Filer\_i\_förteckning_, _Filer\_ej\_i\_leveransmapp_, _Filer\_ej\_i\_förteckning_ för respektive flik. Detta attribut kopplar till rätt Name range i excellen.
+
+Lägg till en _Counter_ efter varje _AttributeCreator_ med Count Start = 2, Count Scope = Local och Output Attribute Names Count = xlsx\_row\_id. Nu har vi valt vilken rad i excellen som ska populeras.
 
 \
-I ditt skript, lägg till en excell writer och i parameters ange likt nedan:
+För varje excell-writer feature type, ange inställningarna i properties likt nedan:
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Koppla din writer till output-porten för UnmergedRequestor och gå in på writerns\
-parametrar. Under writer parameters, ange yes för Overwrite Existing File samt\
-ange Template File till mallfilen.
+För _User Attributes_ vill vi lika många attribut som vi har i vår Name range, annars så hamnar data utanför mallen.&#x20;
 
-\
-I writerns properties, ange I Sheet Name flikens namns nedsträck det du döpte\
-Name range till i excell filen (blad1/namn).
+Excell-mallen är uppbyggd med attributen nedan för _Filer i förteckning_ och _Filer ej i leveransmapp_ respektive _Filer finns ej i förteckning_.
 
-\
-Under Drop/Truncate sätt Truncate Existing Sheet/Name Range till Yes, den\
-andra till No.
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p><em>Filer i förteckning</em> och <em>Filer ej i leveransmapp</em></p></figcaption></figure>
 
-\
-I fliken User Attributes, se till så att du inte har fler attribut än vad din Name\
-Range har.
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p><em>Filer finns ej i förteckning</em></p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+I editeringen av din writer (nås via knapp likt nedan), ange inställningarna likt nedan:
 
-Klicka OK. Stäng Excellmall-filen (annars failar körnignen) och kör sedan\
-skriptet.
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
+Klicka OK. Stäng Excellmall-filen (annars failar körnignen) och kör sedan skriptet.
