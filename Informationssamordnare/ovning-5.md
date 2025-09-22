@@ -29,7 +29,7 @@ Excell-mallen är uppbyggd med attributen nedan för _Filer i förteckning_ och 
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p><em>Filer finns ej i förteckning</em></p></figcaption></figure>
 
-I editeringen av din writer (nås via knapp likt nedan), ange inställningarna likt nedan:
+I editeringen av din writer, ange inställningarna likt nedan:
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
