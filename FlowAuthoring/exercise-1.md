@@ -21,7 +21,6 @@ You will have to login on the FME Flow and create the following users and assign
 * There are several ways to open FME Flow.
   * From the windows start menu.
   * From the browser
-    * [http://localhost/fmeserver](http://localhost/fmeserver)
     * [http://fmetraining/fmeserver](http://fmetraining/fmeserver)
 
 - The login to FME Flow by default is:
