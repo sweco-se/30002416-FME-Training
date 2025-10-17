@@ -21,10 +21,13 @@ I projektmappen finns en handlingsförteckning 1568-C1-21-06033 (C:\FMEData2025\
 
 <summary>Bonus:</summary>
 
-* Kan vi ta ut vilken tekniksystem filen hör till?
-  * Lägg till en StringSearcher transformer efter din joiner
-  * Searh In: vilket attribut innehåller informationen vi letar efter?
-  * Contains Regular Expression: (?<=Systemhandling\\)(.\*?)(?=\\)
-  * Matched Result: attributnamn (t.ex. tekniksystem)
+Vi har några ”UnusedSuppliers” i vår FeatureMerger (UnjoinedRight i vår FeatureJoiner). Dessa har ingen information om tekniksystem. Vi kan dock se i vår mappstruktur att filerna ligger i mappar med namn C1, A1, E1 med flera. Utifrån din erfarenhet som data- och informationssamordnare vet du att dessa förkortningar kan kopplas till tekniksystem likt nedan tabell. Kan vi ta ut vilket tekniksystem filen hör till så det blir tydligt i ett attribut?
+
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+* Lägg till en StringSearcher transformer efter din joiner
+* Searh In: vilket attribut innehåller informationen vi letar efter?
+* Contains Regular Expression: (?<=Systemhandling\\)(.\*?)(?=\\)
+* Matched Result: attributnamn (t.ex. tekniksystem)
 
 </details>
