@@ -51,6 +51,8 @@ Make sure that you take care of the required attributes as set in the Schema for
 
 What happens when the FMEData2025 folder doesnt exist and a features comes from the "\<Rejected>" port? Create a proper error response.
 
+Once your workspace is ready, publish it back to FME Flow and test your new API-call in the Swagger interface.
+
 <details>
 
 <summary>Tips:</summary>
@@ -62,7 +64,7 @@ What happens when the FMEData2025 folder doesnt exist and a features comes from 
       * Root: This is the top level from your Json, it will be printed once per feature you send in. So if you only want to create 1 Json (like we do in our case) then you have to make sure that only 1 feature is send in. If it receives 5 features, it will create 5 Json's.
       * Sub-template: the Json you write in here is merged into the Root. This is where you normaly send your features to.
 
-      <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
