@@ -37,8 +37,6 @@ Schema's dont limit you on the data you can return with a FME Workspace endpoint
 
 Make sure to fill in all the required fields to make it a proper documented API endpoint. Think of; Tags, summaries, descriptions, HTTP Status Codes etc.
 
-Since you are now developing an endpoint that will return production data. Make sure to enable Security for the FMEUser, FMEAuthor and FMEAdmin role.
-
 ## Assignment 2:
 
 Generate a workspace and open it in FME Form.
