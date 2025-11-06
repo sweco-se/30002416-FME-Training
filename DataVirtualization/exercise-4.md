@@ -51,6 +51,8 @@ What happens when the FMEData2025 folder doesnt exist and a features comes from 
 
 Once your workspace is ready, publish it back to FME Flow and test your new API-call in the Swagger interface.
 
+Does the "path" value look proper? If not, make sure to fix this in your model.
+
 <details>
 
 <summary>Tips:</summary>
