@@ -4,7 +4,7 @@ description: Get specific Folder
 
 # Exercise 6
 
-Next up, you want the user to be able to navigate down into folders to see all the files that are within it. This is why you need to create another GET call that gets all the files within the specified folder.
+Next up, you want the user to be able to navigate down into folders to see all the files that are within it. This is why you need to create another GET endpoint that gets all the files within the specified folder.
 
 ## Assignment 1:
 
@@ -16,7 +16,7 @@ Create a new endpoint:
 | Method   | GET       |
 | Response | Workspace |
 
-Make sure to fill in the rest of the information as you please and add a Tag that you can use to group this call into a proper group. For instance: FileManagement
+Make sure to fill in the rest of the information as you please and add a Tag that you can use to group this endpoint into a proper group. For instance: FileManagement
 
 For the Parameters, this time you want to create a Path query parameter that the user will automatically fill by clicking on a directory:
 
@@ -31,20 +31,20 @@ In the Response, make sure to set it on Workspace and add a proper HTTP Status c
 For the workspace you will go trough sort of the same process as before. However, this time you don't need to filter on the name, extension and limits but only on the path.
 
 {% hint style="info" %}
-Since it's sort of the same process, we can add this new API call into the same workspace. You are free to create a new workspace. This is up to you. For training purposes, we will explain this exercise with the idea that you put this call into the same workspace. This so that you get a better understanding of having 1 workspace for several API calls.
+Since it's sort of the same process, we can add this new API endpoint into the same workspace. You are free to create a new workspace. This is up to you. For training purposes, we will explain this exercise with the idea that you put this endpoint into the same workspace. This so that you get a better understanding of having 1 workspace for several API endpoints.
 {% endhint %}
 
-Go to the "Workspaces" tab and select your new call. Assign the **previously created** workspace to it.
+Go to the "Workspaces" tab and select your new endpoint. Assign the **previously created** workspace to it.
 
 The status will now change to "Needs Updating".
 
 Open your model in FME Workbench. The workspace should now have a new FeatureType called "GET/getFiles".
 
-In this workspace you will first check if the "query.path" has a value. If so, you can let the featuereader read from that folder. If it doesn't have a value, let it read the entire FMEData2025 catalog again. You will use the same type of featureReader as before, Directory and File Pathnames.
+In this workspace you will first check if the "query.path" has a value. If so, you can let the featuereader read from that folder. If it doesn't have a value, let it read the entire C:\FMEData2025 catalog again. You will use the same type of featureReader as before, Directory and File Pathnames.
 
-For this call, we don't need to do extra filtering afterwards so you can immediatly continue with a JSONTemplater and set the proper response codes.
+For this endpoint, we don't need to do extra filtering afterwards so you can immediately continue with a JSONTemplater and set the proper response codes.
 
-Make sure to take care of "rejected" featues as well from the FeatureReader.
+Make sure to take care of "rejected" features as well from the FeatureReader.
 
 {% hint style="info" %}
 In this particular case we are simply creating a Parallel flow besides the original. You could integrate the two streams with proper tests to then handle everything with transformers in series. However, in this course we don't want to focus too much on workspace development but more on the possibilities of FME's Data Virtualization. So we want to keep the workspaces as simple and straightforward as possible.
@@ -70,11 +70,9 @@ You can test it in the App by clicking on a directory and see if you get a resul
 </details>
 
 {% hint style="info" %}
-This is going to very specific for this use case. But it is important in general when working with FME and Data Virtualization (and anything for that matter).
+This is going to very specific for this use case. But it is important in general when working with FME and Data Virtualization (and anything for that matter): **Security!**
 
-**Security!**
-
-In our app, we can only choose folders that are present inside the C:\FMEData2025 catalog. However, in the Swagger interface, we can type the path.
+In our app, we can only choose folders that are present inside the C:\FMEData2025 catalog. However, in the Swagger interface, we can type in any path.
 
 Here we could for instance look in: "C:\Users\Administrator\AppData\Local\Microsoft". The workspace behind this API will run as normal and return all the files in this catalog. This catalog can store sensitive information like user credentials.
 
