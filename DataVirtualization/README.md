@@ -2,7 +2,7 @@
 
 
 
-<figure><img src=".gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F4u0pxPkccDOMulvy0ZeO_2Fuploads_2FHNNFsmKhlIb3Vy2J4VRH_2Fhttps___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2FOBHn7oCqp6jz5MRA.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/https___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2F4u0pxPkccDOMulvy0ZeO_2Fuploads_2FHNNFsmKhlIb3Vy2J4VRH_2Fhttps___files.gitbook.com_v0_b_gitbook-x-prod.appspot.com_o_spaces_2FOBHn7oCqp6jz5MRA.avif" alt=""><figcaption></figcaption></figure>
 
 This is the exercise manual for the FME Data Virtualization training course for Safe Software’s FME Flow application. The exercises in this manual are meant for advanced users of FME Form and FME Flow. This course is given by Sweco and is only partially developed by Safe Software.
 

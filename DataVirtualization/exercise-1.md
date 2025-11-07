@@ -8,7 +8,7 @@ Before we start to create our own API, we should at least test one out ourselves
 
 Skolverket has a great free to use API that we can use to get our toes wet.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## **Assignment 1**:
 
@@ -52,7 +52,7 @@ You can choose the program you want to use!
 
 **FME**: in FME we can use a "creator" followed by a "HTTPCaller". Make sure to set the correct "HTTP Method":
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
