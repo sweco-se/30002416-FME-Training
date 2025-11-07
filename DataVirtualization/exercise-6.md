@@ -1,76 +1,88 @@
 ---
-description: Endpoint Parameters
+description: Get specific Folder
 ---
 
 # Exercise 6
 
-Data Virtualization supports endpoint parameters, which allow users to refine API requests and customize responses. These parameters help specify which resources to access (path parameters), how to filter or modify the results (query parameters), and include additional instructions or metadata (header parameters), such as authentication details.
+Next up, you want the user to be able to navigate down into folders to see all the files that are within it. This is why you need to create another GET call that gets all the files within the specified folder.
 
-Parameters are first defined when creating the endpoint metadata in FME Flow. Then, inside the Data Virtualization workspace, you can use readers, writers, and transformers to apply the parameters.
+## Assignment 1:
 
-These components handle the filtering, transformation, and routing based on the values sent in the request.
+Create a new endpoint:
 
-### &#x20;Endpoint Parameters
+| Field    | Value     |
+| -------- | --------- |
+| path     | getFiles  |
+| Method   | GET       |
+| Response | Workspace |
 
-&#x20;Data Virtualization supports all major types of HTTP parameters:
+Make sure to fill in the rest of the information as you please and add a Tag that you can use to group this call into a proper group. For instance: FileManagement
 
-* &#x20;Path parameters modify the URL path to identify a specific resource (e.g. /users/{userId}).
-* Query parameters are appended to the URL to filter, sort, or control response content (e.g. /search?query=keyword).
-* Header parameters provide additional instructions, such as authentication tokens or metadata (e.g. Authorization: Bearer {token}).
+For the Parameters, this time you want to create a Path query parameter that the user will automatically fill by clicking on a directory:
 
-Most parameters can be optional, giving users the flexibility to tailor API responses to their specific needs while improving performance and usability.
+| Name | Type   | Required |
+| ---- | ------ | -------- |
+| path | String | x        |
 
-### Update an Endpoint with Query Parameters in FME Flow
+In the Response, make sure to set it on Workspace and add a proper HTTP Status code. For the Schema, you can reuse the schema you've created earlier. This since you will still return information about the files.
 
-The EnvironData Coordination Oﬃce defines the limit and status query parameters in FME Flow. This step sets up how the API will accept input from users, including the parameter names, data types, and where they appear in the HTTP request. These definitions prepare the endpoint for dynamic filtering and controlled result sets in later stages of the workflow.
+## Assignment 2:
 
-### Updating a Data Virtualization Endpoint
+For the workspace you will go trough sort of the same process as before. However, this time you don't need to filter on the name, extension and limits but only on the path.
 
-Once a data virtualization workspace is published, any changes to its endpoint metadata in FME Flow will set the workspace status to “Needs Updating.” This status signals that you have to redownload the workspace into FME Workbench. The metadata updates will reflect in the reader, writer, and templates. From there, it’s up to the author to update the workflow to support the new metadata and then republish the workspace to FME Flow.
+{% hint style="info" %}
+Since it's sort of the same process, we can add this new API call into the same workspace. You are free to create a new workspace. This is up to you. For training purposes, we will explain this exercise with the idea that you put this call into the same workspace. This so that you get a better understanding of having 1 workspace for several API calls.
+{% endhint %}
 
-### Add Query Parameters to an Existing Endpoint
+Go to the "Workspaces" tab and select your new call. Assign the **previously created** workspace to it.
 
-In FME Flow, open the Data Virtualization EnvironData API and navigate to the Endpoints tab. Select the GET /wildfires endpoint. Navigate to the Parameters tab.
+The status will now change to "Needs Updating".
 
-Next to Query Parameters, click Add. Add and complete two query parameters for ‘limit’ and ‘status’. Leave these parameters as not required, the end user can choose to include them in the request as needed:
+Open your model in FME Workbench. The workspace should now have a new FeatureType called "GET/getFiles".
 
-| Name   | Type    | Description                                                                             | Required |
-| ------ | ------- | --------------------------------------------------------------------------------------- | -------- |
-| limit  | Integer | Limit the number of returned results                                                    | no       |
-| status | string  | <p>Filter wildfire events by status (e.g., "active", "contained",</p><p>"resolved")</p> | no       |
+In this workspace you will first check if the "query.path" has a value. If so, you can let the featuereader read from that folder. If it doesn't have a value, let it read the entire FMEData2025 catalog again. You will use the same type of featureReader as before, Directory and File Pathnames.
 
-### Create a New Status Code in FME Flow
+For this call, we don't need to do extra filtering afterwards so you can immediatly continue with a JSONTemplater and set the proper response codes.
 
-Introducing parameters to the request also introduces potential failure points. To handle cases where users provide invalid parameter values, we will implement an additional status code to ensure clear and appropriate responses.
+Make sure to take care of "rejected" featues as well from the FeatureReader.
 
-Navigate to the Response tab. Click Add Status Code Configure a "400 - Bad Request" status code, which will apply when a user submits an invalid value for the “status” parameter.
+{% hint style="info" %}
+In this particular case we are simply creating a Parallel flow besides the original. You could integrate the two streams with proper tests to then handle everything with transformers in series. However, in this course we don't want to focus too much on workspace development but more on the possibilities of FME's Data Virtualization. So we want to keep the workspaces as simple and straightforward as possible.
+{% endhint %}
 
-| Name             | Value                   |
-| ---------------- | ----------------------- |
-| HTTP Status Code | 400 - Bad Request       |
-| Description      | Invalid parameter value |
-| Content Type     | Application/json        |
-| Input Type       | Create Properties       |
+Once you are done creating your model. Upload it back to FME Flow and test it.
 
-Instead of using predefined schemas, responses can also be defined by creating custom properties. This approach is best suited for endpoints with simple or unique response structures that do not require a shared schema. Properties function the same way as schemas in terms of how responses are structured and returned. They will appear in your API documentation as examples of expected responses, providing clarity for end users without the need for a separate, reusable schema definition.
+You can test it in the App by clicking on a directory and see if you get a result. For instance:
 
-Click the Create button next to Properties to define a new property.
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-| Name          | Type   |
-| ------------- | ------ |
-| Error Message | String |
+<details>
 
-Review the completed parameters and Save.
+<summary>Tips:</summary>
 
-Updating an endpoint configuration in FME Flow automatically triggers a warning message. This simply indicates that the associated workspace must be updated to reflect the new configuration changes.
+* You will first need to test if the "query.path" parameter has a value. This can for instance be done with an AttributeManager and Conditional Values on a new "\_path" attribute. If the parameter has a value, we can set the output of the "\_path" attribute to it. If it does not have a value, we default it back to the "C:\FMEData2025" catalog.
 
-Click **Save** to continue.
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-### Configure an Updated Data Virtualization Workspace
+* For the JsonTemplater you can reuse the one we already have in the model. This because you will still return the same attributes in the response.
+* It shouldn't be possible for the user to send a "non-existing" path while using the web-app. However, if they would use swagger and send in an invalid path you do need to take care of the "rejected" port. Make sure to add a proper status code to the output of the rejected port and inside your API.
 
-&#x20;After updating an endpoint configuration in FME Flow, the endpoint workspace must also be updated and republished for the changes to take effect. Until this is done, the configuration updates remain incomplete in the Web UI.
+</details>
 
-To verify, go to the Workspaces tab and locate the GET /wildfires endpoint. The Workspace Status will have changed from "Assigned" (its previous status) to "Needs Updating", indicating that the workspace requires an update before the changes are applied. In the next exercise, we will update the workspace.
+{% hint style="info" %}
+This is going to very specific for this use case. But it is important in general when working with FME and Data Virtualization (and anything for that matter).
 
-&#x20;
+**Security!**
 
+In our app, we can only choose folders that are present inside the C:\FMEData2025 catalog. However, in the Swagger interface, we can type the path.
+
+Here we could for instance look in: "C:\Users\Administrator\AppData\Local\Microsoft". The workspace behind this API will run as normal and return all the files in this catalog. This catalog can store sensitive information like user credentials.
+
+For this training, this is not so important since these machines are temporary. But when creating a real life production environment. Make sure to build in checks and build in proper security.
+
+This can both be done in several ways:
+
+1. Use Data Virtualization's Authentication.
+2. Build in proper tests in your workspace.
+3. Limit the access that the Service account of FME Flow has.
+{% endhint %}
