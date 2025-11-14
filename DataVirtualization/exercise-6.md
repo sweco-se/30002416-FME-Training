@@ -83,4 +83,5 @@ This can both be done in several ways:
 1. Use Data Virtualization's Authentication.
 2. Build in proper tests in your workspace.
 3. Limit the access that the Service account of FME Flow has.
+4. Use a combination of the ones above.
 {% endhint %}
