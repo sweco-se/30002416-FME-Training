@@ -37,7 +37,7 @@ For this endpoint you will need to use the following settings:
 | Method   | POST               |
 | Response | Workspace          |
 
-&#x20;As you will see, when you choose the "POST" method, a different tab is added named "Request Body". Here you have the option to specify how a request body should look and what it should contain. In this case, the request body should contain a very simple JSON that has the "path" parameter that will contains the search-path to the file.
+As you will see, when you choose the "POST" method, a different tab is added named "Request Body". Here you have the option to specify how a request body should look and what it should contain. In this case, the request body should contain a very simple JSON that has the "path" parameter that will contains the search-path to the file.
 
 Because the front-end developer has already created the code. All you have to do is make sure that FME Flow takes care of it. In the Request Body tab, make sure it is set to "Required" and add a property called "path" as a required string.
 
@@ -63,9 +63,11 @@ You can for instance use a StringSearcher or StringReplacer with regex or you co
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;Now that you have the path to the file to be downloaded, FME will simplify things for you. You can set the "response.body.content\_file\_path" to this value. FME will then automatically understand it should send the content of this file.
+Now that you have the path to the file to be downloaded, FME will simplify things for you. You can set the "response.body.content\_file\_path" to this value. FME will then automatically understand it should send the content of this file.
 
 Make sure to also set the other properties for the http\_response feature type. For the other settings, the Body Content Type is very important. You must set this to "application/octet-stream".
+
+Once you've done this. Upload the workspace to FME and go into the file-browser app and try it!
 
 {% hint style="info" %}
 
@@ -79,9 +81,23 @@ Application/octet-stream is a general-purpose MIME (Multipurpose Internet Mail E
 you need to use this content type here since the user can download all kind of file formats. By using a binary format, the extension of the file will determine what kind of file we are working with.
 {% endhint %}
 
+{% hint style="info" %}
+If you look in logs or in the web-console. You will see that search paths that we work with often get an extra \ in their path.
 
+When you're dealing with JSON and file paths, the extra `\` (backslash) is typically due to how escape characters are handled. In JSON, certain characters like backslashes need to be escaped to be represented correctly. Here’s a breakdown:
 
-&#x20;
+1. **Escape Character**: The `\` is an escape character in many programming languages and data formats, including JSON.
+2. **Path Example**: In a file path like `C:\Users\Example`, the `\` needs to be escaped in JSON. So it becomes `C:\\Users\\Example`.
+3. **JSON Encoding**: Properly encoded JSON string:&#x20;
+   1. `{"path":"C:\\Users\\Example"}`
+4. **Actual Representation**: When parsed, it represents the string `C:\Users\Example` correctly in your application.
+{% endhint %}
+
+{% hint style="info" %}
+Keep in mind that this is a very simplified version of a download. The Filename is not properly taken care of and you would need to download all dependency files for a shape file or for instance a file geodatabase in order for them to work.&#x20;
+
+This example is just to show how a POST request works. You can take care of all the extra requirements in a workspace.
+{% endhint %}
 
 &#x20;
 
