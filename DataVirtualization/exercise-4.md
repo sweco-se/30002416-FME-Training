@@ -63,7 +63,7 @@ Because the end-user can send in filters, make sure to **Merge Initiator and Res
 
 * After reading the files with a featureReader, you can use a **StringSearcher** to look for any specified name filters:
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -78,7 +78,7 @@ Because the end-user can send in filters, make sure to **Merge Initiator and Res
 * The Last parameter to take care of, is the "limit". First add a **Counter** starting at 1 to give all the files a number. Then add a **Tester** to check if query.limit > 0. If query.limit is bigger than 1, add another **Tester** that checks: \_count <= query.limit. This will give you the right results.
 * Add a JsonTemplater to create the proper Json, making sure you take care of all the attributes you defined in the Schema before. If you are not familiar with this transformer, there is some help in the "Tips" below.
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Your workspace should now look something like this.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Your workspace should now look something like this.</p></figcaption></figure>
 
 * Make sure to take care of all the required attributes for the output, for instance "response.status\_code"&#x20;
 

@@ -10,7 +10,7 @@ Navigate to "C:\app\MappArkiv" in a windows explorer.
 
 Once you are in this folder, click the bar that contains the path and type "cmd":
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Press "Enter".
 
@@ -22,7 +22,7 @@ npm run dev
 
 After a little while you will see the following:
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can now minimize this screen, **don't close it!**
 
