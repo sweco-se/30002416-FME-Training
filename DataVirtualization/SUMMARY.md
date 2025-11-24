@@ -9,3 +9,4 @@
 * [Exercise 6](exercise-6.md)
 * [Exercise 7](exercise-7.md)
 * [Exercise 8](exercise-8.md)
+* [Tips & Tricks](tips-and-tricks.md)
