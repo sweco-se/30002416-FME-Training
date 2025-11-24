@@ -49,19 +49,19 @@ Generate a new workspace for this endpoint and open it in FME Form.
 
 In your new workspace you will see that you've now got some extra attributes coming in from the request compared to a "GET":
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 We no longer have the query parameters that are found in the endpoint itself since we didn't set any. Instead. you'll now have request body attributes and the content type.
 
 The content\_type is set to "Application/json" since we wanted that as our input type. The request.body itself will have the value of the path that we are interested in. For instance:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The request body contains the whole JSON that is getting send in. For FME to download the file, we only need the search path. You can use different transformers to extract the value of this search path from the JSON.
 
 You can for instance use a StringSearcher or StringReplacer with regex or you could simply use a JSONExtractor to get the value of the Path.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now that you have the path to the file to be downloaded, FME will simplify things for you. You can set the "response.body.content\_file\_path" to this value. FME will then automatically understand it should send the content of this file.
 

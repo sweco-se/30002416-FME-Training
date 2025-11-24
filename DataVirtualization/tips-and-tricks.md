@@ -42,9 +42,18 @@ Lets look at the DevTools:
 
 In here we can see that 1 call is marked red which means it failed to process. We can also instantly see the Status code which is 401 (unauthorized).
 
-By clicking on "name" that went wrong, we can see all the details of the call that the browser tried to send.
+By clicking on "name" that went wrong, we can see all the details of the call that the browser tried to send. It allows you to look in different tabs to see each step of the process;
 
-In the "Headers" tab, we can see all the details about the call. Here we can also directly see why it failed.
+* Headers: Contains all the details about the call that has been made. The endpoint, headers, status code etc.
+* Payload: This will show you the query parameters you've send in your request or the content body you've send.
+* Preview: This will show the result of the call (if it was successful or if it has a proper error).
+* Response: This will also show the results as it is returned by the call (in our case often as a JSON or a binary depending on the call we look at). It will be represented as the Content-Type.
+* The other tabs are often not used that much since they don't directly help us with error handling and testing.
 
-The Payload tab will show us the query parameters or content body that we tried to send:
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
