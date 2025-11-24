@@ -69,11 +69,11 @@ Because the end-user can send in filters, make sure to **Merge Initiator and Res
 
 * Now test if the user has added an Extension filter. You can use a **TestFilter** for this:
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * If the user has specified an extension, check it versus the files with a tester:
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The Last parameter to take care of, is the "limit". First add a **Counter** starting at 1 to give all the files a number. Then add a **Tester** to check if query.limit > 0. If query.limit is bigger than 1, add another **Tester** that checks: \_count <= query.limit. This will give you the right results.
 * Add a JsonTemplater to create the proper Json, making sure you take care of all the attributes you defined in the Schema before. If you are not familiar with this transformer, there is some help in the "Tips" below.
@@ -97,7 +97,7 @@ Once your workspace is ready, publish it back to FME Flow and test your new API-
       * Root: This is the top level from your Json, it will be printed once per feature you send in. So if you only want to create 1 Json (like we do in our case) then you have to make sure that only 1 feature is send in. If it receives 5 features, it will create 5 Json's.
       * Sub-template: the Json you write in here is merged into the Root. This is where you normaly send your features to.
 
-      <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 
 

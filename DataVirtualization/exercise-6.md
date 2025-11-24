@@ -54,7 +54,7 @@ Once you are done creating your model. Upload it back to FME Flow and test it.
 
 You can test it in the App by clicking on a directory and see if you get a result. For instance:
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -62,7 +62,7 @@ You can test it in the App by clicking on a directory and see if you get a resul
 
 * You will first need to test if the "query.path" parameter has a value. This can for instance be done with an AttributeManager and Conditional Values on a new "\_path" attribute. If the parameter has a value, we can set the output of the "\_path" attribute to it. If it does not have a value, we default it back to the "C:\FMEData2025" catalog.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * For the JsonTemplater you can reuse the one we already have in the model. This because you will still return the same attributes in the response.
 * It shouldn't be possible for the user to send a "non-existing" path while using the web-app. However, if they would use swagger and send in an invalid path you do need to take care of the "rejected" port. Make sure to add a proper status code to the output of the rejected port and inside your API.
