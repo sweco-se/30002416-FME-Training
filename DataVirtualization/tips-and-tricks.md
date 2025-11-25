@@ -32,7 +32,9 @@ If you do work with multiple loggers in 1 workspace, we'd suggest that you write
 
 For instance like:&#x20;
 
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## DevTools
 
@@ -64,11 +66,11 @@ By clicking on "name" that went wrong, we can see all the details of the call th
 * Response: This will also show the results as it is returned by the call (in our case often as a JSON or a binary depending on the call we look at). It will be represented as the Content-Type.
 * The other tabs are often not used that much since they don't directly help us with error handling and testing.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 

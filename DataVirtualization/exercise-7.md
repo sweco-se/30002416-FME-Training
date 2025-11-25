@@ -55,13 +55,13 @@ We no longer have the query parameters that are found in the endpoint itself sin
 
 The content\_type is set to "Application/json" since we wanted that as our input type. The request.body itself will have the value of the path that we are interested in. For instance:
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The request body contains the whole JSON that is getting send in. For FME to download the file, we only need the search path. You can use different transformers to extract the value of this search path from the JSON.
 
 You can for instance use a StringSearcher or StringReplacer with regex or you could simply use a JSONExtractor to get the value of the Path.
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now that you have the path to the file to be downloaded, FME will simplify things for you. You can set the "response.body.content\_file\_path" to this value. FME will then automatically understand it should send the content of this file.
 
