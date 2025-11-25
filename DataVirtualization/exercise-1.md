@@ -12,6 +12,8 @@ Skolverket has a great free to use API that we can use to get our toes wet.
 
 ## **Assignment 1**:
 
+On your training machine. Navigate to: [`https://api.skolverket.se/skolenhetsregistret/swagger-ui/index.html#/`](https://api.skolverket.se/skolenhetsregistret/swagger-ui/index.html#/) which is Skolverkets Swagger API documentation.
+
 Make an API call to: `https://api.skolverket.se/skolenhetsregistret/v2/school-units` and see what you get as a result.
 
 There are a few different programs that you can use to make this API call. Try to use the following 3:
@@ -29,12 +31,12 @@ cURL is a command-line tool and library for transferring data with URLs. It supp
 {% endhint %}
 
 {% hint style="info" %}
-&#x20;We are going to use FME to create an API but FME is also a great tool to intergrate with API's. It can do so by using the HTTPCaller  or the OpenAPICaller (out of scope for now).
+&#x20;We are going to use FME to create an API but FME is also a great tool to integrate with API's. It can do so by using the HTTPCaller  or the OpenAPICaller (out of scope for now).
 {% endhint %}
 
 ## **Assignment 2**:
 
-API's can often be chained after each other to get more detailed information. The call we made in the first assignment gave us all the schools in Sweden. We now want to get more details about the following school: "Stockholm Science & Innovation School 78433202, SSIS"
+API's must often be chained after each other to get more detailed information. The call we made in the first assignment gave us all the schools in Sweden. We now want to get more details about the following school: "Stockholm Science & Innovation School 78433202, SSIS"
 
 Make a new request using the following API call to get detailed information about this school:
 
@@ -57,5 +59,5 @@ You can choose the program you want to use!
 </details>
 
 {% hint style="info" %}
-The Skolverket API only has "GET" calls as a method. These are relativly easy to use. Later on in this course we will work with different methods once we've created our own API with FME's Data Virtualization. The Browser method will then no longer work and we will start using FME or the Data Virtualization Swagger UI instead. These make it easier to test our API
+The Skolverket API only has "GET" calls as a method. These are relatively easy to use. Later on in this course we will work with different methods once we've created our own API with FME's Data Virtualization. The Browser method will then no longer work and we will start using a pre-build app or the Data Virtualization Swagger UI instead. These make it easier to test our API
 {% endhint %}
