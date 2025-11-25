@@ -6,11 +6,17 @@ description: For those of you who want that little extra edge!
 
 During this course, you've been working with a system that has already been developed by a frond-end developer. Normally this might not be the case. It would give you more freedom regarding parameters you send in and what kind of methods and paths you use. However, testing might become a bit harder since you are often stuck with the Swagger UI or programs like Postman.
 
-Here we'll try to give you some tips and tricks that you can use during development.
+Here we'll try to give you some tips and tricks that you can use during development. Either for Data Virtualization with and Data Virtualization without a front-end application.
+
+## FME Flow Log files.
+
+As always with FME Flow, job logs are very important! If you are working with workspace endpoints and have "Caching" disabled, FME Flow will always run a job when a request is made to Data Virtualization. These jobs work like any other workspace and get a Job ID and Job Log.&#x20;
+
+Make sure to look in these Job Logs to see if there are any errors or warnings that could provide you with a solution if you don't get the expected result or data from your API call.
 
 ## Loggers!!!
 
-When working with DataVirtualization (and even with normal workspaces) in FME Flow. You cannot always clearly see what data comes in and what value the attributes have. It can be worth adding a "logger" transformer in your workspace. For instance directly after the "Reader Feature Types":
+When working with Data Virtualization (and even with normal workspaces) in FME Flow. You cannot always clearly see what data comes in and what value the attributes have. It can be worth adding a "logger" transformer in your workspace. For instance directly after the "Reader Feature Types":
 
 <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
@@ -19,6 +25,14 @@ This will force FME Flow to write out the entire feature in the Job Log. This al
 You can then copy and paste these values into FME form when you try to run the workspace there for test purposes.
 
 <figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+You are not limited to 1 logger in a workspace. You can add several in different steps of your workspace to see how the data is transformed and if it looks like you expect.
+
+If you do work with multiple loggers in 1 workspace, we'd suggest that you write a hard-coded text in the logger so that you know exactly which logger is triggered. (FME will also log your written text).
+
+For instance like:&#x20;
+
+
 
 ## DevTools
 
@@ -57,3 +71,6 @@ By clicking on "name" that went wrong, we can see all the details of the call th
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+Looking in the DevTools can often give you leads on things that might have gone wrong. (not just for Data Virtualization).
+
