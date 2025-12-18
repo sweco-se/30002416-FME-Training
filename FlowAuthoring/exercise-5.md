@@ -17,13 +17,10 @@ Upload the Workspace to FME Flow so that the users that will use it automaticall
 <summary>Tips:</summary>
 
 * There are Autocad DWG files to clip with in: C:\FMEData2025\Data\SCB\DWG\\
-
-- The Raster is located at C:\FMEData2025\Data\Lantmateriet\sverigekartan\s1milj.tif.\
-  You will need to upload this to FME Flow.
-
+* The Raster is located at C:\FMEData2025\Data\Lantmateriet\sverigekartan\s1milj.tif.\
+  You will need to upload this with your workspace to FME Flow.
 * When uploading the file from the Wizard. Does the source in the Reader matter?
-
-- When publishing the workspace as a Download service, does the output destination matter?
+* When publishing the workspace as a Download service, does the output destination matter?
 
 </details>
 
