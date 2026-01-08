@@ -95,7 +95,7 @@ Once your workspace is ready, publish it back to FME Flow and test your new API-
   *   In the Json Templater you have to write some information yourself. In general you can see it like this:
 
       * Root: This is the top level from your Json, it will be printed once per feature you send in. So if you only want to create 1 Json (like we do in our case) then you have to make sure that only 1 feature is send in. If it receives 5 features, it will create 5 Json's.
-      * Sub-template: the Json you write in here is merged into the Root. This is where you normaly send your features to.
+      * Sub-template: the Json you write in here is merged into the Root. This is where you normally send your features to.
 
       <figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 

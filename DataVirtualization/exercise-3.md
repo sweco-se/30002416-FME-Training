@@ -26,8 +26,22 @@ Create a manual "About" endpoint that returns the following information to the e
 }
 ```
 
-Make sure that you properly document it, give it a proper "Tag" and make sure you implement the correct type of "HTTP Status Code"
+For this endpoint you will have to use the "GET" method. Make sure that you properly document it, give it a proper "Tag" and make sure you implement the correct type of "HTTP Status Code"
 
 ## Assignment 2:
 
 Open the Swagger documentation and test your API call. Did you get the expected result? Also, go back to FME Flow and look at the "Jobs" menu. Did anything happen? Why is this?
+
+<details>
+
+<summary><strong>Tips:</strong></summary>
+
+**Assignment 1:**
+
+This is a manual response that will always return the JSON you've written. Therefore a simple 200 HTTP response will be good. There is not much that can go wrong here!
+
+**Assignment 2:**
+
+Manual responses always return the same result. This means that no workspace has to run since FME already knows what it should return and doesn't have to run a workspace to generate data. So you shouldn't see anything in the "Jobs" site.
+
+</details>
