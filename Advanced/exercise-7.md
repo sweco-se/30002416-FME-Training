@@ -25,14 +25,13 @@ Your data is in a PostGIS database located at:
 <summary>Tips:</summary>
 
 * You’ll need a few different user parameters. Note that the choice type has an Import button which might make your life easier. Let your users choose an output format, and the columns they want.
+* If a user can select multiple choices in a choice parameter, how will the value of that parameter look like if you _fetch_ it in the canvas? Use the ParameterFetcher to find out!
+* Rule number one when working with databases is to let the database do the heavy lifting. In this case, how can you send the input from the parameters on to the database, and get only the data you need back? One way is to use the SQLExecutor to select your data. You might need some Text Editor magic to get your column name user parameter to behave as valid SQL:
 
-- Rule number one when working with databases is to let the database do the heavy lifting. In this case, how can you send the input from the parameters on to the database, and get only the data you need back? One way is to use the SQLExecutor to create a view, and then read the contents of your view back into your workspace. You might need some Text Editor magic to get your column name user parameter to behave as valid SQL:
+<figure><img src=".gitbook/assets/Skärmbild 2026-02-11 181816.png" alt=""><figcaption><p>SQL example</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>SQL example</p></figcaption></figure>
-
-* The schema feature from the Feature reader is a great help in dynamic workflows, so see if you can utilize that.
-
-- What type of writer can handle both different output formats and different output schemas?
+* A schema feature is a great help in dynamic workflows, so see if you can utilize that. A schema feature is typicaly found as an output port from the FeatureReader, but in your case maybe the schema feature can be found directly in the SQL transformer!
+* What type of writer can handle both different output formats and different output schemas?
 
 </details>
 
