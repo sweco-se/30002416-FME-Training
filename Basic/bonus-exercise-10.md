@@ -19,15 +19,15 @@ It is now up to you to analyze which properties are in the risk zone and if the 
 **You are going to use the following data:**
 
 * An excel file that contains the personal information of the people that wanted to join in this initiative.
-  * “C:\FMEData2025\Data\Stockholm\Personsuppgifter.xlsx”\*
+  * “C:\FMEData2026\Data\Stockholm\Personsuppgifter.xlsx”\*
   * This data can be looked at using the FME Data Inspector.
   * \*The data in this Excel file is generated with AI and is not real!
 * A GeoJson file that contains the water areas around Stockholm.
-  * “C:\FMEData2024\Data\Stockholm\Vatten.json”
+  * “C:\FMEData2026\Data\Stockholm\Vatten.json”
   * This data can be looked at using a Notepad program or the FME Data inspector.
   * This data comes from OpenStreetMaps.
 * A Shape file that contains the buildings and their ID’s in Stockholm.
-  * “C:\FMEData2024\Data\Stockholm\Fastigheter.shp”
+  * “C:\FMEData2026\Data\Stockholm\Fastigheter.shp”
   * This data can be looked at using the FME Data Inspector.
   * This data comes from OpenStreetMaps.
 

@@ -12,19 +12,18 @@ They do notice that some of the columns in the shape have confusing names or con
 
 They would like you to change the so called “schema”\* in the following way:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Desired output Schema</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Desired output Schema</p></figcaption></figure>
 
 They would also like the columns in the schema in a different order. The order should look as followed:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Schema order</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>Schema order</p></figcaption></figure>
 
 <details>
 
 <summary>Tips:</summary>
 
 * Once you’ve edited the Schema, you will notice some yellow and red errors on the featuretypes for both the reader and the writer. You will have to do some “feature mapping”.
-
-- Your feature mapping will be lost once you unlink the featuretypes or place a certain type of transformer in between them.
+* Your feature mapping will be lost once you unlink the featuretypes or place a certain type of transformer in between them.
 
 </details>
 

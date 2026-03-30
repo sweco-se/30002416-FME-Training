@@ -17,11 +17,11 @@ The Tele 2 arena has asked you if you can make a HTML page that shows the shorte
 You receive the following information from the Tele 2 arena:
 
 * An XML file with the start and end point address. (Tele 2 arena and the Stockholm Central Station).
-  * C:\FMEData2025\Data\Stockholm\Addresses.xml
+  * C:\FMEData2026\Data\Stockholm\Addresses.xml
 * A Json file with the Stockholm area as a polygon.
-  * C:\FMEData2025\Data\Stockholm\Stockholm.json
+  * C:\FMEData2026\Data\Stockholm\Stockholm.json
 * An Autocad DWG file that contain the OpenStreetMap data from Sweden
-  * C:\FMEData2025\Data\OpenStreetMaps\OpenStreetMap\_Roads.dwg
+  * C:\FMEData2026\Data\OpenStreetMaps\OpenStreetMap\_Roads.dwg
   * They tell you that the creator forgot to put a coordinate system on it but that the coordinates are in the: LL84 coordinate system.
   * &#x20;The Tele 2 arena wants to stress the importance of traffic violations. They tell you that the path you create cannot use:
     * Cycleways
@@ -33,7 +33,7 @@ Create a workspace that takes these input files and calculates the shortest path
 
 They want you to write the output to:
 
-C:\FMEData2025\Output\ShortestPath.html
+C:\FMEData2026\Output\ShortestPath.html
 
 <details>
 
@@ -51,7 +51,7 @@ C:\FMEData2025\Output\ShortestPath.html
 * Once you’ve prepared the Network and created a line between the start and end point you need to find the _shortest path_.
 * The topology of the road network might not be a 100% perfect. FME can snap to a road with a certain tolerance to avoid nuances like this. A snapping tolerance of 1 should suffice.
 * Creating a HTML can be done by using an HTMLReportGenerator.
-* To show a map and geometries in a HTML Report. A “Map” can be used as the _page content_. Google is the only service that does not require an API key and is therefore suitable to use for this exercise.
+* To show a map and geometries in a HTML Report. A “Map” can be used as the _page content_. Esri Leaflet has a great map that does not require an account.
 * A HTML writer only accepts 1 attribute called: html\_content.
 
 </details>
@@ -63,7 +63,7 @@ C:\FMEData2025\Output\ShortestPath.html
 Just showing a map in an HTML page is quite easy in FME. However, you have the possibility to make quite nice reports with relative ease. Let’s see if we can make the output a bit nicer.
 
 * Give the page a title.
-* &#x20;Add the C:\FMEData2025\Resources\Webmap\Tele2ArenaHeader.jpg image as an image at the top of your page.
+* &#x20;Add the C:\FMEData2026\Resources\Webmap\Tele2ArenaHeader.jpg image as an image at the top of your page.
 * Write a “header” that tells the user what the site shows them.
 * Show the map with the path.
 * Add a line of text that tells the _length_ of the path in meters, _rounded_ at 0 decimals.

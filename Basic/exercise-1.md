@@ -18,11 +18,11 @@ Read the Geopackage and convert it to a shape file.
 
 **The Geopackage lies in the following location:**
 
-C:\FMEData2025\Data\Demografiska\_Statistikomraden\Demografiska\_statistikomraden.gpkg
+C:\FMEData2026\Data\Demografiska\_Statistikomraden\Demografiska\_statistikomraden.gpkg
 
 **They want you to write it to a new shape file which should be saved as:**
 
-C:\FMEData2025\Output\Demografiska\_statistikomraden.shp
+C:\FMEData2026\Output\Demografiska\_statistikomraden.shp
 
 <details>
 
@@ -32,12 +32,9 @@ C:\FMEData2025\Output\Demografiska\_statistikomraden.shp
   1. Browse by Format.
   2. Browse by File
   3. Drag and Drop.
-
-- Writers can be added on different ways. For instance, by clicking on the “Writer” button in the menu bar.
-
+* Writers can be added on different ways. For instance, by clicking on the “Writer” button in the menu bar.
 * Do you need to Transform the data or could “Generate workspace” be a good solution?
-
-- When writing to a shape file, you choose a folder to write the file to. The name of the file can be changed in the “FeatureType”**\***.
+* When writing to a shape file, you choose a folder to write the file to. The name of the file can be changed in the “FeatureType”**\***.
 
 
 
@@ -49,7 +46,7 @@ C:\FMEData2025\Output\Demografiska\_statistikomraden.shp
 
 One of your colleagues needs this data in another format and would like to get a GML file. Try to add a second writer to the same workspace and write the same data as a GML fil&#x65;**\*\***.
 
-The data can be saved in the same folder: C:\FMEData2025\Output\Demografiska\_statistikomraden.gml
+The data can be saved in the same folder: C:\FMEData2026\Output\Demografiska\_statistikomraden.gml
 
 
 

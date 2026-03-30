@@ -8,19 +8,18 @@ Your colleagues are impressed of everything you’ve done so far! Since you mana
 
 Assignment:
 
-* Write an extra shape file as: C:\FMEData2025\Output\Lan\_sverige.shp.
+* Write an extra shape file as: C:\FMEData2026\Output\Lan\_sverige.shp.
 * Again, the geometries should be dissolved. This time, based on Lanskod/namn. Each län should also get the area calculated, rounded on 2 decimals.
 * Make sure the schema looks as followed:
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>Schema for the Län shape file.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Schema for the Län shape file.</p></figcaption></figure>
 
 <details>
 
 <summary>Tips:</summary>
 
 * Since you will be using some of the same transformers you can select 1 or several and use CTRL+D to duplicate them.
-
-- One shape writer is not limited to writing 1 shape. You can use the above tip on the Shape file writers featuretype as well.
+* One shape writer is not limited to writing 1 shape. You can use the above tip on the Shape file writers featuretype as well.
 
 </details>
 

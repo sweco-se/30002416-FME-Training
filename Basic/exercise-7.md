@@ -10,7 +10,7 @@ Since it’s not just the Geo-department who’s going to use this data you need
 
 The Geo-department would like to have this data in the GML format the non-spatial variant should be written to Excel.
 
-_If you didn’t finish exercise 6 you can open: C:\FMEData2025\Workspaces\FMEFormBasic\Exercise7\_WritingDemographicData\_begin.fmw_
+_If you didn’t finish exercise 6 you can open: C:\FMEData2026\Workspaces\FMEFormBasic\Exercise7\_WritingDemographicData\_begin.fmw_
 
 **Assignment:**
 
@@ -26,7 +26,7 @@ GML:
 * area
 * Total\_Population
 
-It should be written to: C:\FMEData2025\Output\Sweden\_Pop.gml
+It should be written to: C:\FMEData2026\Output\Sweden\_Pop.gml
 
 &#x20;Excel:
 
@@ -44,7 +44,7 @@ o   area
 
 o   Total\_Population
 
-It should be written to: C:\FMEData2025\Output\Sweden\_Pop.xlsx
+It should be written to: C:\FMEData2026\Output\Sweden\_Pop.xlsx
 
 <details>
 
@@ -54,10 +54,9 @@ It should be written to: C:\FMEData2025\Output\Sweden\_Pop.xlsx
   * You can click the Writer icon in the menu.
   * You can click “Writers” in the top menu bar and choose “add writer”
   * You can search for the format like with a transformer. Make sure to choose writers. The first popup is often the reader.
-
-- You can pick a name for the feature type yourself. Pick something that seems meaningful to you.
-- You’re already familiar with different ways to set the output schema. Make sure to set it correct. Don’t worry too much about the Type and Width
-- Since the schemas of both datasets are the same you can use the following trick to only create the schema once!
+* You can pick a name for the feature type yourself. Pick something that seems meaningful to you.
+* You’re already familiar with different ways to set the output schema. Make sure to set it correct. Don’t worry too much about the Type and Width
+* Since the schemas of both datasets are the same you can use the following trick to only create the schema once!
   * Create the schema for 1 of the writer FeatureTypes.
   * &#x20;Add a new writer for the second output file.
   * Once you’ve picked a location where to write the file, just click Next or Ok on all the other screens until a FeatureType for the new writer appears on your canvas.

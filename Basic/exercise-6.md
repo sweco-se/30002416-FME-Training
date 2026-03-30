@@ -12,22 +12,20 @@ SCB (Statistikmyndigheten) in Sweden has published new data regarding the demogr
 
 It is up to you to read this data and _join/merge_ this data with the output you’ve gotten with the dissolver and area calculator so far. Then calculate the total population per municipality by writing an _expression_.
 
-Open C:\FMEData2025\Workspaces\FMEFormBasic\Exercise6\_ReadingDemographicData\_begin.fmw.
+Open C:\FMEData2026\Workspaces\FMEFormBasic\Exercise6\_ReadingDemographicData\_begin.fmw.
 
 The file that contains the demographic information is located in:
 
-C:\FMEData2025\Data\Demografiska\_statistikomraden\Folkmängd\_per\_lan\_och\_region\_2025.xlsx
+C:\FMEData2026\Data\Demografiska\_statistikomraden\Folkmängd\_per\_lan\_och\_region\_2025.xlsx
 
 <details>
 
 <summary>Tips:</summary>
 
 * There are several ways to add a new file as a reader to your workspace.
-
-- Always look at the “Parameters” when adding a new reader.
+* Always look at the “Parameters” when adding a new reader.
   * Does the data look as you expect it?
   * Do you need all the data?
-
 *   &#x20;     Drawing a lot of lines to 1 transformer can take a lot of time and have a bad impact on your patience. Luckily FME understands that your time is valuable! Try and follow the following steps (_After you’ve added the file to read.):_
 
     * Click in the menu on the top on “View”
@@ -43,9 +41,8 @@ C:\FMEData2025\Data\Demografiska\_statistikomraden\Folkmängd\_per\_lan\_och\_re
     * Select all the sources you want to quick connect (you can Drag your mouse, hold ctrl or use shift just like in a normal windows explorer screen).
     * Once you’ve selected all the sources you want to connect, choose a destination port in the “destinations” column.
     * Then click the “Connect” button to automatically let FME draw all the lines.
-
-- When you perform a _join/merge_ on data you need a common attribute. What do these 2 datasets have in common?
-- Adding values together in FME works the same as with a calculator. You can simply write an _Expression_ like: attribute1 + attribute2 + attribute3
+* When you perform a _join/merge_ on data you need a common attribute. What do these 2 datasets have in common?
+* Adding values together in FME works the same as with a calculator. You can simply write an _Expression_ like: attribute1 + attribute2 + attribute3
 
 </details>
 
@@ -60,3 +57,4 @@ Try and add the reader again. This time check the setting “Single Merged Featu
 In this case, if you “don’t” read the “read me” sheet, all the columns are the same. What do you expect happens if the sheets have different columns?
 
 </details>
+
