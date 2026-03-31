@@ -6,13 +6,13 @@ description: Custom transformers
 
 Your team has been working a lot with hydrological data recently, for a project. You’re using the SMHI dataset for catchment areas, found here:
 
-C:\FMEData2025\Data\SMHI\Delavrinningsområden\_2016
+C:\FMEData2026\Data\SMHI\Delavrinningsområden\_2016
 
 The data is fine, but you’ve noticed an irritant: a lot of the columns contain data kept in codes, and need a code list to be useful for presentation and human readability. The code list is found in a PDF document, and you all spend an annoying amount of time copy-pasting from this. In one case, you also need data from another shapefile.
 
 You decided to solve the problem once and for all, moved the data to excel, and created a workspace that does the decoding, found at:
 
-C:\FMEData2025\Workspaces\ FMEFormAdvanced\exercise8\_start.fmw
+C:\FMEData2026\Workspaces\ FMEFormAdvanced\exercise8\_start.fmw
 
 **Assignment**:
 

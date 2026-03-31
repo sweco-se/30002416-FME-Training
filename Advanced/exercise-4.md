@@ -10,7 +10,7 @@ The city of Stockholm has released a LOD1 3D model of large parts of the city as
 
 Your employer has asked you to use this to identify office buildings with a volume of over 50 000 cubic meters for participation in an exciting new research program. You will need to calculate the volumes of all buildings identified as offices, and then filter out the relevant candidates to pass on to your colleagues.The 3D data can be found here:
 
-C:\FMEData2025\Data\Stockholm\_3D\DWG
+C:\FMEData2026\Data\Stockholm\_3D\DWG
 
 You’ll notice it’s been divided into multiple files, to keep them of a manageable size. As 3D-processing is quite resource demanding, we’re going to make use of that division.
 

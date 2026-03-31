@@ -4,11 +4,11 @@ description: Parameters to rule the world.
 
 # Exercise 5
 
-You’re working on a series of thematic maps, and have downloaded some nice, stylized background maps as GeoJSON from [https://www.projectlinework.org/](https://www.projectlinework.org/) that you want to use. You realise you keep making the same edits to your dataset over and over, and decide to make a parameterized workspace to do it for you.
+You’re working on a series of thematic maps, and have downloaded some nice, stylized background maps as GeoJSON from [https://www.projectlinework.org/](https://www.projectlinework.org/) that you want to use. You realize you keep making the same edits to your dataset over and over, and decide to make a parameterized workspace to do it for you.
 
 There are three different datasets in the folder:
 
-C:\FMEData2025\Data\projectlinework
+C:\FMEData2026\Data\projectlinework
 
 **Assignment**:
 
@@ -29,14 +29,12 @@ Once you are happy with your choices, you want to create a log file of which set
 <summary>Tips:</summary>
 
 * A choice parameter doesn’t need to have the same display name as value. Use this to make your file selection parameter more user-friendly.
-
-- Consider using private scripted parameters to control the search envelope in the reader. If you’re not used to writing python, there is a snippet for inspiration in: C:\FMEData2025\Resources\example\_scripted\_parameter.txt
+* Consider using private scripted parameters to control the search envelope in the reader. If you’re not used to writing python, there is a snippet for inspiration in: C:\FMEData2026\Resources\example\_scripted\_parameter.txt
 
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>Scripted Parameters</p></figcaption></figure>
 
 * If scripted parameters feel unnecessarily complex, it is also possible to use a tester to test the value of your extents parameter, and then clip the linework to a bounding box based on the result.
-
-- You don’t want to append a line to your log file until you’re sure your geodatabase was written correctly. How do you ensure that?
+* You don’t want to append a line to your log file until you’re sure your geodatabase was written correctly. How do you ensure that?
 
 </details>
 

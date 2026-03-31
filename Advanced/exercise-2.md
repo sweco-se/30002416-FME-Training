@@ -12,20 +12,18 @@ You have received a file containing data on rainfall in your city. Unfortunately
 
 You will find input data here:
 
-C:\FMEData2025\Data\Prepared\_data\Precipitation.xlsx
+C:\FMEData2026\Data\Prepared\_data\Precipitation.xlsx
 
 Your goal is to create an excel file with the same data, plus a column for each month containing average rainfall for that month. In other words, you want the cumulative rainfall for that month, minus the cumulative rainfall of the month before. Store the new file here:
 
-C:\FMEData2025\Output\Exercise2
+C:\FMEData2026\Output\Exercise2
 
 <details>
 
 <summary>Tips:</summary>
 
 * Remember that you are dealing with numeric attributes. You need the arithmetic editor.
-
-- &#x20;You need to _enable adjacent feature attributes_ to have access to them.
-
+* &#x20;You need to _enable adjacent feature attributes_ to have access to them.
 * When enabled, you will find attributes of adjacent features under the “FME Feature Attributes” tab in the attribute editor window. Feature\[-1] is the feature before the current one, feature\[+1] is the feature after.
 * Find the “Substitute Missing, Null and Empty” setting and give it a sensible value. Where will it be used and what do you want it to do there?
 

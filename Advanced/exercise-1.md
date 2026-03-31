@@ -18,19 +18,19 @@ You project is to look at all roads within a kilometer from the sea. You have be
 
 Someone has already produced a polygon representing the area within 1 km from the coastline in the relevant area. It has been saved as a geodatabase here:
 
-* C:\FMEData2025\Data\Prepared\_data\havsnara\_skane.gdb
+* C:\FMEData2026\Data\Prepared\_data\havsnara\_skane.gdb
 
 You have downloaded communications data from Lantmäteriet. You only need the roads, which are in a layer called ”vaglinje”. The geopackage is here:
 
-* C:\FMEData2025\Data\Lantmateriet\topo\_50\_skane\kommunikation\_ln12.gpkg
+* C:\FMEData2026\Data\Lantmateriet\topo\_50\_skane\kommunikation\_ln12.gpkg
 
 You have also downloaded the correct raster for the 50 m grid elevation model:
 
-* C:\FMEData2025\Data\Lantmateriet\nh\_skane\_tiff
+* C:\FMEData2026\Data\Lantmateriet\nh\_skane\_tiff
 
 The output from your analysis should be saved as a file in a useful format of your choice under:
 
-* C:\FMEData2025\Output\Exercise1
+* C:\FMEData2026\Output\Exercise1
 
 In addition to the risk classification, you have been asked to provide the following attributes on each road segment:
 
@@ -47,12 +47,9 @@ In addition to the risk classification, you have been asked to provide the follo
 <summary>Tips:</summary>
 
 * You are only interested in parts of your source data, so try to limit the amounts you process. Before going 3D, make sure your elevation and roads data is clipped to your project area.
-
-- The process of transferring elevation data to vector features is known as _draping features_ in FME, so look at the SurfaceDraper transformer. The input port for elevation data is called points/lines, but also accepts rasters.
-
+* The process of transferring elevation data to vector features is known as _draping features_ in FME, so look at the SurfaceDraper transformer. The input port for elevation data is called points/lines, but also accepts rasters.
 * To find the maximum and minimum coordinates of a feature can be termed _extracting bounds._ What do you think the transformer is called?
-
-- You’ll notice the roads are not classified as Major, Intermediate, Small. They do however have a type, in the attribute objekttypnr. A suggestion might be to map this as follows:
+* You’ll notice the roads are not classified as Major, Intermediate, Small. They do however have a type, in the attribute objekttypnr. A suggestion might be to map this as follows:
 
 &#x20;
 
