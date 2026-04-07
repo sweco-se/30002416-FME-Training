@@ -30,11 +30,11 @@ Use the following Query parameters:
 
 | Name      | Type    | Required |
 | --------- | ------- | -------- |
-| q         | String  | V        |
+| q         | String  | x        |
 | extension | String  | x        |
 | limit     | Integer | x        |
 
-In the Response, set the following schema ("Create Schema"):
+In the Response, choose to add a response code for 200 and set the following schema ("Create Schema"):
 
 | Name      | Type   | Required |
 | --------- | ------ | -------- |
@@ -53,7 +53,7 @@ Make sure to fill in all the required fields to make it a proper documented API 
 
 Generate a workspace and open it in FME Form.
 
-In this workspace you need to read all the file information of the folder: C:\FMEData2025 this folder will be our filesystem that the API will communicate with.
+In this workspace you need to read all the file information of the folder: C:\FMEData2026 this folder will be our filesystem that the API will communicate with.
 
 Make sure to read all the files in this folder and all its subfolders with a "Directory and File Path Names" format.&#x20;
 
@@ -78,11 +78,11 @@ Because the end-user can send in filters, make sure to **Merge Initiator and Res
 * The Last parameter to take care of, is the "limit". First add a **Counter** starting at 1 to give all the files a number. Then add a **Tester** to check if query.limit > 0. If query.limit is bigger than 1, add another **Tester** that checks: \_count <= query.limit. This will give you the right results.
 * Add a JsonTemplater to create the proper Json, making sure you take care of all the attributes you defined in the Schema before. If you are not familiar with this transformer, there is some help in the "Tips" below.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Your workspace should now look something like this.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p>Your workspace should now look something like this.</p></figcaption></figure>
 
 * Make sure to take care of all the required attributes for the output, for instance "response.status\_code"&#x20;
 
-What happens when the FMEData2025 folder doesn't exist and a features comes from the "\<Rejected>" port? Create a proper error response.
+What happens when the FMEData2026 folder doesn't exist and a features comes from the "\<Rejected>" port? Create a proper error response.
 
 Once your workspace is ready, publish it back to FME Flow and test your new API-call in the Swagger interface.
 
@@ -120,5 +120,6 @@ fme:process-features("SEARCHRESULT")
 ```
 
 * There is a custom transformer, called the: "DataVirtualizationResponseSetter" that can take care of the status codes for your.
+* When testing your workspace, keep in mind, that by default, FME sets the parameters itself to strings like: "\<string>". These will not work when testing. You either have to set a value or leave them empty as in: "".
 
 </details>

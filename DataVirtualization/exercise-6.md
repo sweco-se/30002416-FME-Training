@@ -54,15 +54,15 @@ Once you are done creating your model. Upload it back to FME Flow and test it.
 
 You can test it in the App by clicking on a directory and see if you get a result. For instance:
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
 <summary>Tips:</summary>
 
-* You will first need to test if the "query.path" parameter has a value. This can for instance be done with an AttributeManager and Conditional Values on a new "\_path" attribute. If the parameter has a value, we can set the output of the "\_path" attribute to it. If it does not have a value, we default it back to the "C:\FMEData2025" catalog.
+* You will first need to test if the "query.path" parameter has a value. This can for instance be done with an AttributeManager and Conditional Values on a new "\_path" attribute. If the parameter has a value, we can set the output of the "\_path" attribute to it. If it does not have a value, we default it back to the "C:\FMEData2026" catalog.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 * For the JsonTemplater you can reuse the one we already have in the model. This because you will still return the same attributes in the response.
 * It shouldn't be possible for the user to send a "non-existing" path while using the web-app. However, if they would use swagger and send in an invalid path you do need to take care of the "rejected" port. Make sure to add a proper status code to the output of the rejected port and inside your API.
@@ -72,9 +72,9 @@ You can test it in the App by clicking on a directory and see if you get a resul
 {% hint style="info" %}
 This is going to very specific for this use case. But it is important in general when working with FME and Data Virtualization (and anything for that matter): **Security!**
 
-In our app, we can only choose folders that are present inside the C:\FMEData2025 catalog. However, in the Swagger interface, we can type in any path.
+In our app, we can only choose folders that are present inside the C:\FMEData2026 catalog. However, in the Swagger interface, we can type in any path.
 
-Here we could for instance look in: "C:\Users\Administrator\AppData\Local\Microsoft". The workspace behind this API will run as normal and return all the files in this catalog. This catalog can store sensitive information like user credentials.
+Here we could for instance look in: "C:\Users\FMEUser\AppData\Local\Microsoft". The workspace behind this API will run as normal and return all the files in this catalog. This catalog can store sensitive information like user credentials.
 
 For this training, this is not so important since these machines are temporary. But when creating a real life production environment. Make sure to build in checks and build in proper security.
 

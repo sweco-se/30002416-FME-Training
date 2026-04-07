@@ -13,7 +13,7 @@ Create a manual "About" endpoint that returns the following information to the e
 ```json
 {
 "name": "FME Training Filesystem",
-"description": "This Filesystem allows you to interact with the FMEData2025 catalog that is hosted on the server",
+"description": "This Filesystem allows you to interact with the FMEData2026 catalog that is hosted on the server",
 "options": [
 "File Overviews",
 "Downloading Files",

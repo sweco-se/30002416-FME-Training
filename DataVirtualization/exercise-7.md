@@ -10,7 +10,7 @@ For a POST call you always send the information in your "request body" when you 
 
 In the previous exercise you've created a GET endpoint that sends a query parameter with the PATH:
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;This endpoint could also work as a POST if we would  have configured it like that. We would then use the Method POST and the request could look something like this:
 
@@ -19,7 +19,7 @@ In the previous exercise you've created a GET endpoint that sends a query parame
 * **Headers**:
   * Content-Type: application/json
 * **Request-body**:&#x20;
-  * {"path":"C:\FMEData2025\Data\Demografiska\_statistikomraden"}
+  * {"path":"C:\FMEData2026\Data\Demografiska\_statistikomraden"}
 
 GET is the more obvious path to take here since you are Requesting data. But the possibility is there!
 
@@ -55,7 +55,7 @@ We no longer have the query parameters that are found in the endpoint itself sin
 
 The content\_type is set to "Application/json" since we wanted that as our input type. The request.body itself will have the value of the path that we are interested in. For instance:
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 The request body contains the whole JSON that is getting send in. For FME to download the file, we only need the search path. You can use different transformers to extract the value of this search path from the JSON.
 
