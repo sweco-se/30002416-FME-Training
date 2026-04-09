@@ -4,7 +4,7 @@ description: Roads at risk.
 
 # Exercise 1
 
-The average global temperature for 2024 was over 1.5 degrees above the per-industrial level according to the world meteorological organization. Climate change is here, and climate adaptation has become a crucial topic in governmental decision-making.
+The average global temperature for 2024 was over 1.5 degrees above the pre-industrial level according to the world meteorological organization. Climate change is here, and climate adaptation has become a crucial topic in governmental decision-making.
 
 **Assignment**:
 
