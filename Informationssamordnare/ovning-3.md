@@ -14,7 +14,7 @@ Utgå från Workspacet i övning 2
 * Tycker du någon information saknas? Lägg till valfritt!
 * Lägg till en Writer och välj Excel
   * Bekanta dig med de olika inställningarna&#x20;
-* Skriv till en excel-fil i mappen C:\FMEData2025\Data\Informationssamordnare\15\_Kontroll&#x20;
+* Skriv till en excel-fil i mappen C:\FMEData2026\Data\Informationssamordnare\15\_Kontroll&#x20;
 * Kontrollera din excell – är den tydlig? Kan vi göra den tydligare?&#x20;
   * Sortera på filtyp?&#x20;
   * Dela upp information i flikar?
@@ -23,7 +23,7 @@ Utgå från Workspacet i övning 2
 
 <summary>Bonus:</summary>
 
-* Formatera om ett datumattribut till År-Månad-Dag (2025-02-27)
+* Formatera om ett datumattribut till År-Månad-Dag (2026-02-27)
   * Använd transformern AttributeManager
   * För ditt datumattribut Value – open text editor – Date/Time\
     Functions

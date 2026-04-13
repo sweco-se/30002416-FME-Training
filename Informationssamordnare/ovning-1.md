@@ -9,9 +9,10 @@ Inspector
 
 * Starta FME Workbench på din dator.&#x20;
 * Bekanta dig med användargränssnittet. Titta på de olika panelerna, inklusive arbetsytan, verktygspaletten och kontrollpanelen.
-* Lägg till en PDF Reader och läs in PDF-filen C:\FMEData2025\Data\Informationssamordnare\03\_Dokument\00\_Förteckningar\1568 -C1-21-06033.pdf
+* Lägg till en PDF Reader och läs in PDF-filen C:\FMEData2026\Data\Informationssamordnare\03\_Dokument\00\_Förteckningar\1568 -C1-21-06033.pdf
 * Kör workspace:et med feature caching för att kolla på vår data&#x20;
 * Öppna Data Inspector för att titta närmare på vår data – hur upplever du PDF-filen?
 * Lägg till en Excel reader och läs in Excel-versionen av 1568-C1-21- 06033
 * Hur upplever du Excel-filen i jämförelse med PDF:en?&#x20;
 * Spara ditt workspace som Övning 1
+

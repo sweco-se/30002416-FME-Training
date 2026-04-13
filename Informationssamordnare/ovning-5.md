@@ -7,7 +7,7 @@ description: Skriv till Excell efter en mall
 Projektledaren vill ha en Excell med en flik för de filer som inte finns i leveransmappen och att den ska följa mallen som används i uppdraget. Din uppgift är att låta FME använda befintlig mall och format för din Excell-fil.
 
 \
-Mall att använda finns i C:\FMEData2025\Data\Informationssamordnare\15\_Kontroll (1568-C1-21-06033\_mall.xlsx).&#x20;
+Mall att använda finns i C:\FMEData2026\Data\Informationssamordnare\15\_Kontroll (1568-C1-21-06033\_mall.xlsx).&#x20;
 
 Utgå från övning 4.
 

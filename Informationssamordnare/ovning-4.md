@@ -5,7 +5,7 @@ description: Läs in Excel och jämför
 # Övning 4
 
 Du känner på dig att alla filer inte har levererats ännu och vill veta hur leveransfilerna och handlingsförteckningen stämmer överens. Din uppgift är att jämföra filerna i leveransmappen med handlingsförteckningen och skriva ut en excellfil som visar på hur statusen ser ut.\
-I projektmappen finns en handlingsförteckning 1568-C1-21-06033 (C:\FMEData2025\Data\Informationssamordnare\03\_Dokument\00\_Förteckningar) i Excel- format
+I projektmappen finns en handlingsförteckning 1568-C1-21-06033 (C:\FMEData2026\Data\Informationssamordnare\03\_Dokument\00\_Förteckningar) i Excel- format
 
 
 
