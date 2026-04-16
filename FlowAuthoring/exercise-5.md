@@ -6,7 +6,7 @@ description: Clipping Raster.
 
 Another colleague needs your help. She has created a workspace that clips a Raster with a geometry that comes from an Autocad file. She gets a request to do this several times a week and automating it with FME Flow could save her a lot of time. (The persons requesting it from her can then do it themselves instead.)
 
-Open: C:\FMEData2025\Workspaces\FMEFlowAuthoring\Exercise5\_TiffClipper.fmw
+Open: C:\FMEData2026\Workspaces\FMEFlowAuthoring\Exercise5\_TiffClipper.fmw
 
 **Assignment:**
 
@@ -16,8 +16,8 @@ Upload the Workspace to FME Flow so that the users that will use it automaticall
 
 <summary>Tips:</summary>
 
-* There are Autocad DWG files to clip with in: C:\FMEData2025\Data\SCB\DWG\\
-* The Raster is located at C:\FMEData2025\Data\Lantmateriet\sverigekartan\s1milj.tif.\
+* There are Autocad DWG files to clip with in: C:\FMEData2026\Data\SCB\DWG\\
+* The Raster is located at C:\FMEData2026\Data\Lantmateriet\sverigekartan\s1milj.tif.\
   You will need to upload this with your workspace to FME Flow.
 * When uploading the file from the Wizard. Does the source in the Reader matter?
 * When publishing the workspace as a Download service, does the output destination matter?

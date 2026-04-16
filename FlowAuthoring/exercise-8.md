@@ -16,7 +16,7 @@ Try to create an easy to use and nice-looking Application.
 
 * Make sure to see which parameters should be published and which are not necessary.
 * Write instructions for the end user
-* You can use icons and images from: C:\FMEData2025\Resources\FlowAppLayouts
+* You can use icons and images from: C:\FMEData2026\Resources\FlowAppLayouts
 * Test your app by coping the link you get and by then logging out of FME Flow and opening it.
 
 </details>

@@ -14,7 +14,7 @@ Luckily you know a consultant at Sweco who has done something like this before a
 
 **Assignment**:
 
-&#x20;Open the workspace: Exercise4\_FMEFlowDocumentation.fmw in: C:\FMEData2025\Workspaces\FMEFlowAuthoring\\
+&#x20;Open the workspace: Exercise4\_FMEFlowDocumentation.fmw in: C:\FMEData2026\Workspaces\FMEFlowAuthoring\\
 
 Create a new schedule which creates a server documentation automatically every day at xx:xx (pick a time that you want. However, you should be able to see if it works)
 
@@ -26,12 +26,9 @@ Create a new schedule which creates a server documentation automatically every d
   * Create Web Connection with "superuser" role (to be able to document all Workspaces and schedules)
   * Select the Web Connection in private parameters
   * Set the published parameter DOCUMENTATION\_DIR (if needed)
-
-- Publish the workspace to the repository you’ve created in exercise 2
-
+* Publish the workspace to the repository you’ve created in exercise 2
 * Create a schedule for this workspace. It should run once per day.
-
-- Test the schedule by triggering it manually.
+* Test the schedule by triggering it manually.
 
 </details>
 

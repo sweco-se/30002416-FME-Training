@@ -26,7 +26,7 @@ Create an automation that does the following:
 * Check out the action "Log a message" if you want to write out something specific in the automation log while testing, maybe you want to learn the value of some output attributes and parameters?
 * Look at the workspace parameters. Where should it write data?
 * When uploading the workspace. What Service do you recon would be best for automations which are triggered automatically?
-* A test file can be found in: C:\FMEData2025\Data\Skåne\_GeoJson
+* A test file can be found in: C:\FMEData2026\Data\Skåne\_GeoJson
 
 </details>
 

@@ -12,7 +12,7 @@ In a webinar you’ve seen recently, you saw the possibility to draw a geometry 
 
 **Assignment**:
 
-Open the workspace: C:\FMEData2025\Workspaces\FMEFlowAuthoring\Exercise7\_TiffClipper2PDF\_Begin.fmw
+Open the workspace: C:\FMEData2026\Workspaces\FMEFlowAuthoring\Exercise7\_TiffClipper2PDF\_Begin.fmw
 
 Change the Workspace in such a way that the user can draw a polygon or box to clip with instead of uploading a clipping dwg.
 
@@ -35,8 +35,7 @@ The colleague also changed the workspace so that the PDF has a title and a foote
 It looks good but most of the changes are hardcoded and therefore not useful.
 
 * Can you create an extra parameter so that the user can choose the title themselves?
-
-- Now the date is added to the title by a parameter the user needs to fill in. FME has a lot of smart date functions, can you make so that today’s date is filled in automatically by FME and remove the user parameter “TODAY\_DATE”?
+* Now the date is added to the title by a parameter the user needs to fill in. FME has a lot of smart date functions, can you make so that today’s date is filled in automatically by FME and remove the user parameter “TODAY\_DATE”?
 
 </details>
 
