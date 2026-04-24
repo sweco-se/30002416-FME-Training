@@ -30,18 +30,18 @@ Use the following Query parameters:
 
 | Name      | Type    | Required |
 | --------- | ------- | -------- |
-| q         | String  | x        |
-| extension | String  | x        |
-| limit     | Integer | x        |
+| q         | String  | No       |
+| extension | String  | No       |
+| limit     | Integer | No       |
 
 In the Response, choose to add a response code for 200 and set the following schema ("Create Schema"):
 
 | Name      | Type   | Required |
 | --------- | ------ | -------- |
-| name      | String | x        |
-| path      | String | x        |
-| type      | String | x        |
-| extension | String | x        |
+| name      | String | No       |
+| path      | String | No       |
+| type      | String | No       |
+| extension | String | No       |
 
 {% hint style="info" %}
 Schema's dont limit you on the data you can return with a FME Workspace endpoint. This because the workspace simply returns a "Response body" which can contain anything. However, it is best practice to use schema's to help the end-user understand what they can expect from your API call. By creating schema's you automatically update your Swagger documentation. The same Schema can also be used in several API calls. So if you need to update them, you only need to do so in 1 place.
