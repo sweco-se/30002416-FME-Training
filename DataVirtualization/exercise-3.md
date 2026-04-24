@@ -11,6 +11,7 @@ You've created the framework for your API. At this stage, you have not configure
 Create a manual "About" endpoint that returns the following information to the end user:
 
 ```json
+//This code goes into the "Response Message"
 {
 "name": "FME Training Filesystem",
 "description": "This Filesystem allows you to interact with the FMEData2026 catalog that is hosted on the server",

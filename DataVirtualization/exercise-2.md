@@ -4,7 +4,9 @@ description: Create a new API
 
 # Exercise 2
 
-Now that you know how a basic API works, its time to create our own! You are going to create an API that will allow users to check a file system, download files, upload files and even remove files by using GET, POST and DELETE.&#x20;
+Now that you know how a basic API works, its time to create our own!&#x20;
+
+#### You are going to create an API that will allow users to check a file system to see what files are present, download files and even remove files by using GET, POST and DELETE.&#x20;
 
 A developer has already created a front-end application that the users will use to interact with the file system. It is up to you to create the back-end code that will use the Data Virtualization API's to perform these tasks.
 
