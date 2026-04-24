@@ -16,23 +16,44 @@ On your training machine. Navigate to: [`https://api.skolverket.se/skolenhetsreg
 
 Make an API call to: `https://api.skolverket.se/skolenhetsregistret/v2/school-units` and see what you get as a result.
 
-There are a few different programs that you can use to make this API call. Try to use the following 3:
+There are a few different programs that you can use to make this API call. Try to use the following 2:
 
 1. Your Browser
-2. cURL
-3. FME
+2. FME
 
 {% hint style="info" %}
 Your browser is limited to the "GET" method. Since this call is specified as a "GET" you can get the results in your browser. This wouln't work with any other method!
 {% endhint %}
 
 {% hint style="info" %}
-cURL is a command-line tool and library for transferring data with URLs. It supports various protocols like HTTP, HTTPS, FTP, and more. With cURL, you can make web requests, download files, and perform many other internet-related tasks from the terminal. It's commonly used for testing APIs and interacting with web services.
-{% endhint %}
-
-{% hint style="info" %}
 &#x20;We are going to use FME to create an API but FME is also a great tool to integrate with API's. It can do so by using the HTTPCaller  or the OpenAPICaller (out of scope for now).
 {% endhint %}
+
+<details>
+
+<summary>Bonus</summary>
+
+cURL is a command-line tool and library for transferring data with URLs. It supports various protocols like HTTP, HTTPS, FTP, and more. With cURL, you can make web requests, download files, and perform many other internet-related tasks from the terminal. It's commonly used for testing APIs and interacting with web services.
+
+Try to use cURL to send a GET request to the above mentioned API.&#x20;
+
+Open Command Line and try it.&#x20;
+
+You can type:
+
+```
+curl --help all
+```
+
+This will show all the functions that cURL can use. For a GET request, these are out of scope for now. However you can use the flag: -X \<request Method> to specify what sort of request you want to do.
+
+```
+//Example of an API call with cURL.
+
+curl -X GET https://api.skolverket.se/skolenhetsregistret/v2/api-info
+```
+
+</details>
 
 ## **Assignment 2**:
 
