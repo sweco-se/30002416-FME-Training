@@ -41,6 +41,10 @@ You can play around with the filters in the top to see if your model is working 
 This shows how Data Virtualization can integrate different applications with FME. You now have a webapp that is able to dynamically browse a folder on your PC.
 
 {% hint style="info" %}
+It is important that you have disabled "Authentication". If you have this enabled, you will get an error in your browser (when you press F12) and you will not get any results!
+{% endhint %}
+
+{% hint style="info" %}
 As you might see, the app is prepared to have more functions, you can for instance click on the "Name" of folders to look what's inside of these folders.
 
 There is also a "download" button behind every file to be able to download it.
