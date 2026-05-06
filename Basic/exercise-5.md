@@ -46,3 +46,30 @@ FME can perform a lot of the same tasks in different ways. This is where persona
 * Is the workspace shared with colleagues: Talk with your team and determine which types of rules you all want to up live when it comes down to developing workspaces.
 * Is the workspace for an external customer: Try and make your workspace as easy to read as possible.
 {% endhint %}
+
+<details>
+
+<summary>Step-By-Step instructions (Try not to use this!)</summary>
+
+#### If you have trouble doing the exercise on your own, you can use these step-by-step instructions to complete the exercise.
+
+For these steps, we've assumed that you have finished exercise 4.
+
+1. Add two "Reprojector" transformers.
+2. Place the "Reprojectors" behind the "AttributeRounders".\
+   ![](<.gitbook/assets/image (29).png>)
+3. Double click on both "Reprojectors" and set the "Destination Coordinate System" to "LL84". Then click on "OK"
+
+#### Bonus:
+
+You do not need to use Reprojectors to set the output coordinatesystem. If the input data already has a coordinate system, you can set the output coordinte system directly in the writer settings.
+
+1. In the Navigator screen on the left, find your ShapeFile writer.
+2. Click the drop down arrow to see all its settings.\
+   ![](<.gitbook/assets/image (30).png>)
+3. Double click the "Coordinate System: \<not set>" setting.
+4. Choose the "LL84" coordinate system from the list and click on "OK".\
+   ![](<.gitbook/assets/image (31).png>)
+
+</details>
+

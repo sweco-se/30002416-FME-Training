@@ -1,5 +1,6 @@
 ---
 description: Visual Workspace Compare.
+hidden: true
 ---
 
 # Exercise 8
