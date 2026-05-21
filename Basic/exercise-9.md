@@ -18,7 +18,7 @@ You receive the following information from the Tele 2 arena:
 
 * An XML file with the start and end point address. (Tele 2 arena and the Stockholm Central Station).
   * C:\FMEData2026\Data\Stockholm\Addresses.xml
-* A Json file with the Stockholm area as a polygon.
+* A GeoJSON (Geographic JavaScript Object Notation)file with the Stockholm area as a polygon.
   * C:\FMEData2026\Data\Stockholm\Stockholm.json
 * An Autocad DWG file that contain the OpenStreetMap data from Sweden
   * C:\FMEData2026\Data\OpenStreetMaps\OpenStreetMap\_Roads.dwg
