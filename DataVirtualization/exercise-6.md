@@ -40,7 +40,7 @@ The status will now change to "Needs Updating".
 
 Open your model in FME Workbench. The workspace should now have a new FeatureType called "GET/getFiles".
 
-In this workspace you will first check if the "query.path" has a value. If so, you can let the featuereader read from that folder. If it doesn't have a value, let it read the entire C:\FMEData2025 catalog again. You will use the same type of featureReader as before, Directory and File Pathnames.
+In this workspace you will first check if the "query.path" has a value. If so, you can let the featuereader read from that folder. If it doesn't have a value, let it read the entire C:\FMEData2026 catalog again. You will use the same type of featureReader as before, Directory and File Pathnames.
 
 For this endpoint, we don't need to do extra filtering afterwards so you can immediately continue with a JSONTemplater and set the proper response codes.
 
