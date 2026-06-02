@@ -37,7 +37,7 @@ Right now, we are taking all the source data through the entire workspace. From 
 </details>
 
 {% hint style="info" %}
-in FME means that the attribute really does not “exist” on this particular feature. However, the schema of the dataset says that it “could” be there. This is different from “null”. That is when the attribute exists but just doesn’t have a value.
+\<missing> in FME means that the attribute really does not “exist” on this particular feature. However, the schema of the dataset says that it “could” be there. This is different from “null”. That is when the attribute exists but just doesn’t have a value.
 {% endhint %}
 
 <details>
