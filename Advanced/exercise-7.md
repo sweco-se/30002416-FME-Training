@@ -15,7 +15,7 @@ Your data is in a PostGIS database located at:
 **host**: localhost\
 **port**: 5432\
 **database**: FME\
-**user**: FME\
+**user**: postgres\
 **password**: FMElearnings#1\
 **schema**: advanced\
 **table**: kommuner
