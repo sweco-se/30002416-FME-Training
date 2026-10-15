@@ -16,6 +16,10 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
 ---
 
 # Exercise 1
@@ -85,7 +89,7 @@ The data can be saved in the same folder: C:\FMEData2026\Output\Demografiska\_st
 1. Open FME Workbench.
 2. In the top menu, click on "Build" and choose "Generate Workspace".
 3. For the Reader; on the row of "Format", click on the arrow and choose the "OGC GeoPackage" format.\
-   &#xNAN;_&#x4D;ake sure you do not choose the "OGC GeoPackage Tiles" format! This will give an error._\
+   _&#x4D;ake sure you do not choose the "OGC GeoPackage Tiles" format! This will give an error._\
    ![](<.gitbook/assets/image (71).png>)
 4. Click on the "..." for Dataset and locate the input GeoPackage. For instance: C:\FMEData2026\Data\Demografiska\_Statistikomraden\Demografiska\_statistikomraden.gpkg
 5. For the Writer format, choose "Esri Shapefile".

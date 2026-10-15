@@ -82,7 +82,7 @@ An HTML file can be opened in any browser, including phones. A workspace that wr
 
 1. Start with an empty workspace.
 2. Click on the Reader button at the top menu.\
-   ![](<.gitbook/assets/image (54).png>)
+   ![](<.gitbook/assets/Skärmbild 2026-10-15 094521.png>)
 3. For the Format, choose: "XML (Extensible Markup Language)"
 4. For the dataset, choose: C:\FMEData2026\Data\Stockholm\Addresses.xml
 5. Click on Parameters. In this popup, click on the "..." behind "Elements to Match. A new popup will appear. Click on the arrow before "Address" and then check the "PoI" box. This will ensure we can read the attributes that are found under this element.\

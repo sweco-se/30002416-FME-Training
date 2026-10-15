@@ -50,7 +50,7 @@ C:\FMEData2026\Data\Demografiska\_statistikomraden\Folkmängd\_per\_lan\_och\_re
 
 <summary>Bonus:</summary>
 
-Reading a lot of “FeatureTypes” from 1 file (for instance the excel you’ve just read with 22 sheets) quickly fills up your Canvas.&#x20;
+Reading a lot of “FeatureTypes” from 1 file (for instance the Excel you’ve just read with 22 sheets) quickly fills up your Canvas.&#x20;
 
 Try and add the reader again. This time check the setting “Single Merged Feature Type” in the “Add Reader” settings. See what happens and try to understand what FME does.
 

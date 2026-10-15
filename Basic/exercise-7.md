@@ -75,7 +75,7 @@ It should be written to: C:\FMEData2026\Output\Sweden\_Pop.xlsx
 
 <summary>Bonus:</summary>
 
-The Non-Geo departments looked at your data and they are not pleased with it. The excel used to have 1 sheet per Lan and now everything is saved into 1 sheet. They say it will be too much work for them to split up everything.
+The Non-Geo departments looked at your data and they are not pleased with it. The Excel used to have 1 sheet per Lan and now everything is saved into 1 sheet. They say it will be too much work for them to split up everything.
 
 Obviously, you are a bit annoyed by their comment, but you are a FME Guru now! You can easily fix this!
 

@@ -62,7 +62,7 @@ For these steps, we've assumed that you have finished exercise 4.
 
 #### Bonus:
 
-You do not need to use Reprojectors to set the output coordinatesystem. If the input data already has a coordinate system, you can set the output coordinte system directly in the writer settings.
+You do not need to use Reprojectors to set the output coordinate system. If the input data already has a coordinate system, you can set the output coordinate system directly in the writer settings.
 
 1. In the Navigator screen on the left, find your ShapeFile writer.
 2. Click the drop down arrow to see all its settings.\

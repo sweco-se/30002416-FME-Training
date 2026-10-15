@@ -48,10 +48,10 @@ For these steps, we've assumed that you have finished exercise 3.
 5. You now need to write an extra shape file. 1 shapefile Writer can write more then one shapefile if the output catalogue and settings are the same. This is done by adding an extra "FeatureType".\
    Right click the existing FeatureType on your canvas (Demografiska\_statistikomraden) and choose "Duplicate" or Copy and Paste it.\
    ![](<.gitbook/assets/image (26).png>)
-6. Double click the newly added FeatureType that is now called: Demografiska\_statistikomraden00 and change the "Shapefile Name" to "Lander\_Sverige".
+6. Double click the newly added FeatureType that is now called: Demografiska\_statistikomraden00 and change the "Shapefile Name" to "Lan\_Sverige".
 7. Go to the "User Attributes" tab and remove the "Kommunnamn" and "Kommunkod" attributes. Then click on "OK".\
    ![](<.gitbook/assets/image (28).png>)
-8. Connect the second "AattributeRounder" to the newly added FeatureType (Lander\_Sverige). Then you can run your workspace and see if it works as expected.\
+8. Connect the second "AattributeRounder" to the newly added FeatureType (Lan\_Sverige). Then you can run your workspace and see if it works as expected.\
    <br>
 
 </details>
