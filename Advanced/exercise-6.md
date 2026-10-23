@@ -18,7 +18,7 @@ This will give you the weather forecast for a certain point as a JSON file.
 
 You want to create a nice map of the top three warmest areas to go and save this as a pdf. If you have access to a good background map service, please use it. You might for instance have an account to use Lantmäteriets WMTS. Otherwise there is a WMS version of OpenStreetMap at [https://ows.terrestris.de/osm/service?](https://ows.terrestris.de/osm/service?) which works without an account.
 
-Make a pdf of your map and upload it to google drive so your sailing buddies can see it. (Use your own drive if you want, or ask the instructor for details on one.)
+Make a pdf of your map so you can share it with your sailing buddies!
 
 <details>
 
@@ -32,7 +32,6 @@ Make a pdf of your map and upload it to google drive so your sailing buddies can
 * There is a user parameter called DATE in the starting workspace which needs to be set to something that is actually in the forecast, like next Saturday.
 * A Sorter and a Sampler will help you filter out the areas with the highest forecast temperature.
 * If you want, you can stop there. If you want to include a background map, a Reprojector, BoundingBoxAccumulator and Bufferer will help you get a reasonable area to send to a FeatureReader. Make sure to look up which coordinate system your map service requires.
-* You will note there is no option to write immediately to Google Drive. You need to write to a temporary file, using for instance a pdf FeatureWriter, and then upload the file using a connector transformer.
 
 </details>
 
@@ -40,7 +39,7 @@ Make a pdf of your map and upload it to google drive so your sailing buddies can
 
 <summary>Bonus:</summary>
 
-See if you can extract two more weather parameter from the reply (they are described here: [http://opendata.smhi.se/apidocs/metfcst/parameters.html](http://opendata.smhi.se/apidocs/metfcst/parameters.html)), and add to your dataset. Use the Google Sheets writer to write your table directly to an online spreadsheet.
+See if you can extract two more weather parameter from the reply (they are described here: [http://opendata.smhi.se/apidocs/metfcst/parameters.html](http://opendata.smhi.se/apidocs/metfcst/parameters.html)), and add to your dataset.&#x20;
 
 </details>
 
