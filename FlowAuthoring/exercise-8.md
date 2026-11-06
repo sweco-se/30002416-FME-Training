@@ -1,5 +1,5 @@
 ---
-description: Flow Apps.
+description: Flow apps.
 ---
 
 # Exercise 8
@@ -8,7 +8,7 @@ Now that your workspace is so good, more and more colleagues are interested in u
 
 Assignment:
 
-Try to create an easy to use and nice-looking Application.
+Try to create an easy to use and nice-looking application.
 
 <details>
 
@@ -17,7 +17,7 @@ Try to create an easy to use and nice-looking Application.
 * Make sure to see which parameters should be published and which are not necessary.
 * Write instructions for the end user
 * You can use icons and images from: C:\FMEData2026\Resources\FlowAppLayouts
-* Test your app by coping the link you get and by then logging out of FME Flow and opening it.
+* Test your app by copying the link you get and by then logging out of FME Flow and opening it.
 
 </details>
 
@@ -25,8 +25,8 @@ Try to create an easy to use and nice-looking Application.
 
 <summary>Bonus:</summary>
 
-Go back into the settings of your application by modifying it. Enable Authentication and try to open it again.
+Go back into the settings of your application by modifying it. Enable authentication and try to open it again.
 
-Does it till work? How could you handle this authentication now?
+Does it still work? How could you handle this authentication now?
 
 </details>

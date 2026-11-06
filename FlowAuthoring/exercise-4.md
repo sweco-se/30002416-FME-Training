@@ -23,7 +23,7 @@ Create a new schedule which creates a server documentation automatically every d
 <summary>Tips:</summary>
 
 * Make the following changes to enable the workspace to run:
-  * Create Web Connection with "superuser" role (to be able to document all Workspaces and schedules)
+  * Create Web Connection with "superuser" role (to be able to document all workspaces and schedules)
   * Select the Web Connection in private parameters
   * Set the published parameter DOCUMENTATION\_DIR (if needed)
 * Publish the workspace to the repository you’ve created in exercise 2
