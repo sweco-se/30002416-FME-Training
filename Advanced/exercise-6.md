@@ -12,7 +12,7 @@ Your boat is in Göteborg, so you can’t go too far from there. A bounding box 
 
 You could download the dataset, unzip it, open it with FME, create a bounding box geometry and clip the dataset. But you’re in the advanced course now, and you know all of this can be done right in the reader. (If there is any trouble with the link, there is a backup copy of the data in the course data catalog).
 
-You want to make sure you go somewhere the temperature is nice and warm. You have been told there is an open API you can call at: [https://opendata-download-metfcst.smhi.se/api/category/snow1g/version/1/geotype/point/lon/\<LON>/lat/\<LAT>/data.json](https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/%3CLON%3E/lat/%3CLAT%3E/data.json)
+You want to make sure you go somewhere the temperature is nice and warm. You have been told there is an open API you can call at: https://opendata-download-metfcst.smhi.se/api/category/snow1g/version/1/geotype/point/lon/\<LON>/lat/\<LAT>/data.json
 
 This will give you the weather forecast for a certain point as a JSON file.
 
